@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# yrtt-todo-application
 
 This project converts the static to do application to a react project.
