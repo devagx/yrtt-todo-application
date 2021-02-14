@@ -1,16 +1,13 @@
-import logo from './logo.svg';
+import AddTask from './components/AddTask/AddTask'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="header">
         <h1 className="heading">To Do!!</h1>
-        <div className="add-task__actions">
-          <label htmlFor="add-task-input" className="visuallyhidden">Add new to do task</label>
-          <input id="add-task-input" className="add-task__input-field"></input>
-          <button className="button">Add</button>
-        </div>
+        <AddTask />
         <p className="outstanding-tasks">You have 3 tasks to complete</p>
       </header>
       <main className="all-tasks">
