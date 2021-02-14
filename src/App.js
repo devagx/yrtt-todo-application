@@ -15,22 +15,16 @@ function App() {
         <section className="incomplete-tasks">
           <h2 className="heading">Tasks to do:</h2>
           <ul className="task-list">
-            <Task />
-            <Task />
-            <Task />
+            <Task complete={false} />
+            <Task complete={false} />
+            <Task complete={false} />
           </ul>
         </section>
         <section className="complete-tasks">
           <h2 className="heading">Complete tasks:</h2>
           <ul className="task-list">
-            <li className="task task--complete">
-              <p className="task__text">This is a task that needs to be done</p>
-              <button className="button">Delete</button>
-            </li>
-            <li className="task task--complete">
-              <p className="task__text">This is a task that needs to be done</p>
-              <button className="button">Delete</button>
-            </li>
+            <Task complete={true} />
+            <Task complete={true} />
           </ul>
         </section>
       </main>
