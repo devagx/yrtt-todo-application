@@ -2,6 +2,8 @@ import AddTask from './components/AddTask/AddTask'
 import Task from './components/Task/Task'
 import './App.css';
 import React from 'react';
+
+//*** MATERIAL UI ***
 //import { makeStyles } from '@material-ui/core/styles';
 //import Button from '@material-ui/core/Button';
 //<Button variant="contained">Default</Button>
