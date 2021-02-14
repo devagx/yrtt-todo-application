@@ -4,46 +4,46 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header class="header">
-        <h1 class="heading">To Do!!</h1>
-        <div class="add-task__actions">
-          <label for="add-task-input" class="visuallyhidden">Add new to do task</label>
-          <input id="add-task-input" class="add-task__input-field"></input>
-          <button class="button">Add</button>
+      <header className="header">
+        <h1 className="heading">To Do!!</h1>
+        <div className="add-task__actions">
+          <label htmlFor="add-task-input" className="visuallyhidden">Add new to do task</label>
+          <input id="add-task-input" className="add-task__input-field"></input>
+          <button className="button">Add</button>
         </div>
-        <p class="outstanding-tasks">You have 3 tasks to complete</p>
+        <p className="outstanding-tasks">You have 3 tasks to complete</p>
       </header>
-      <main class="all-tasks">
-        <section class="incomplete-tasks">
-          <h2 class="heading">Tasks to do:</h2>
-          <ul class="task-list">
-            <li class="task">
-              <p class="task__text">This is a task that needs to be done</p>
-              <button class="button">Complete</button>
-              <button class="button">Delete</button>
+      <main className="all-tasks">
+        <section className="incomplete-tasks">
+          <h2 className="heading">Tasks to do:</h2>
+          <ul className="task-list">
+            <li className="task">
+              <p className="task__text">This is a task that needs to be done</p>
+              <button className="button">Complete</button>
+              <button className="button">Delete</button>
             </li>
-            <li class="task">
-              <p class="task__text">This is a task that needs to be done</p>
-              <button class="button">Complete</button>
-              <button class="button">Delete</button>
+            <li className="task">
+              <p className="task__text">This is a task that needs to be done</p>
+              <button className="button">Complete</button>
+              <button className="button">Delete</button>
             </li>
-            <li class="task">
-              <p class="task__text">This is a task that needs to be done</p>
-              <button class="button">Complete</button>
-              <button class="button">Delete</button>
+            <li className="task">
+              <p className="task__text">This is a task that needs to be done</p>
+              <button className="button">Complete</button>
+              <button className="button">Delete</button>
             </li>
           </ul>
         </section>
-        <section class="complete-tasks">
-          <h2 class="heading">Complete tasks:</h2>
-          <ul class="task-list">
-            <li class="task task--complete">
-              <p class="task__text">This is a task that needs to be done</p>
-              <button class="button">Delete</button>
+        <section className="complete-tasks">
+          <h2 className="heading">Complete tasks:</h2>
+          <ul className="task-list">
+            <li className="task task--complete">
+              <p className="task__text">This is a task that needs to be done</p>
+              <button className="button">Delete</button>
             </li>
-            <li class="task task--complete">
-              <p class="task__text">This is a task that needs to be done</p>
-              <button class="button">Delete</button>
+            <li className="task task--complete">
+              <p className="task__text">This is a task that needs to be done</p>
+              <button className="button">Delete</button>
             </li>
           </ul>
         </section>
