@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Header */
+
+.header {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Add Task */
+
+.add-task__input-field {
+    height: 30px;
+    margin: 6px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-task__actions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 600px) {
+    .add-task__actions {
+        flex-direction: row;
+        gap: 8px;
+    }
+    .add-task__input-field {
+        flex-basis: 75%;
+    }
+    .add-task__actions .button {
+        flex-basis: 25%;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Tasks */
+
+.task__text {
+    margin-bottom: 0;
+}
+
+.task {
+    margin-bottom: 16px;
+}
+
+.task--complete .task__text {
+    text-decoration: line-through;
+}
+
+.all-tasks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.incomplete-tasks,
+.complete-tasks {
+    flex: 1 1 auto;
+}
+
+.task-list {
+    list-style-type: none;
+    padding-inline-start: 0;
 }
