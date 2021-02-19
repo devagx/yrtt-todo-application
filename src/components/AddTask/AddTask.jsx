@@ -5,10 +5,6 @@ function AddTask({ addTask }) {
   //update react state (text)
   const [text, setText] = useState("");
 
-  const handleChange = (event) => {
-    setText(event.target.value);
-  };
-
   const handleClick = () => {
     addTask(text);
     setText("");
@@ -21,7 +17,7 @@ function AddTask({ addTask }) {
       </label>
       <input
         value={text} //update html element state
-        onChange={handleChange}
+        onChange={(event) => setText(event.target.value)}
         id="add-task-input"
         className="add-task__input-field"
       ></input>
