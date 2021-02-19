@@ -1,7 +1,7 @@
 import Task from "../Task/Task";
 import "./TaskList.css";
 
-function TaskList({ tasks, status,deleteTask }) {
+function TaskList({ tasks, status, deleteTask }) {
   return (
     <section className={`${status}-tasks`}>
       <h2 className="heading">Tasks to do:</h2>
