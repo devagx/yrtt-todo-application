@@ -12,12 +12,12 @@ import React from 'react';
 
 function App() {
   const [tasks, setTasks] = useState([
-    { text: "Buy cat food", completed: false, date: "2020-12-01", id: '001' },
-    { text: "Buy milk", completed: true, date: "2020-12-05", id: '002' },
-    { text: "Clean kitchen", completed: false, date: "2020-11-18", id: '003' },
-    { text: "Eat food", completed: true, date: "2020-09-18", id: '004' },
-    { text: "Go for a walk", completed: false, date: "2020-09-18", id: '005' },
-    { text: "Do food shopping", completed: false, date: "2020-09-18", id: '006' }
+    { text: 'Buy cat food', completed: false, date: '2020-12-01', id: '001' },
+    { text: 'Buy milk', completed: true, date: '2020-12-05', id: '002' },
+    { text: 'Clean kitchen', completed: false, date: '2020-11-18', id: '003' },
+    { text: 'Eat food', completed: true, date: '2020-09-18', id: '004' },
+    { text: 'Go for a walk', completed: false, date: '2020-09-18', id: '005' },
+    { text: 'Do food shopping', completed: false, date: '2020-09-18', id: '006' }
   ])
 
   const incompleteTasks = tasks.filter(task => !task.completed)
