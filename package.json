@@ -23,8 +23,7 @@
     },
     "eslintConfig": {
         "rules": {
-            "quotes": ["error", "single"],
-            "jsx-quotes": ["error", "prefer-single"]
+
         },
         "extends": [
             "react-app",
