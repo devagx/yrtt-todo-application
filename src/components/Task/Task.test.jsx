@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import Task from "./Task";
 
 describe("Task component", () => {
+  afterEach(() => jest.clearAllMocks());
   test(`Given the required props,
     When the component is rendered,
     Then the task text should be present`, () => {
